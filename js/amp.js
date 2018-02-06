@@ -76,6 +76,9 @@ var action = {
     },
     facebook: function () {
         amplitude.getInstance().logEvent('action_facebook');
+    },
+    changeLanguage: function () {
+        amplitude.getInstance().logEvent('action_change_language');
     }
 }
 
