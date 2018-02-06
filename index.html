@@ -61,22 +61,22 @@
                                 <nav>
                                     <ul id="nav">
                                         <li class="current_page_item">
-                                            <a href="#home">Home</a>
+                                            <a href="#home" onclick="actionMenu.home()">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#features">Funcionalidades</a>
+                                            <a href="#features" onclick="actionMenu.functionalities()">Funcionalidades</a>
                                         </li>
                                         <li>
-                                            <a href="#price">Preço</a>
+                                            <a href="#price" onclick="actionMenu.price()">Preço</a>
                                         </li>
                                         <li>
-                                            <a href="#faq">FAQ</a>
+                                            <a href="#faq" onclick="actionMenu.faq()">FAQ</a>
                                         </li>
                                         <li>
-                                            <a href="#download">Download</a>
+                                            <a href="#download" onclick="actionMenu.download()">Download</a>
                                         </li>
                                         <li>
-                                            <a href="#contact">Contato</a>
+                                            <a href="#contact" onclick="actionMenu.contact()">Contato</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -95,6 +95,7 @@
         <div class="table">
             <div class="table_cell">
                 <div class="container">
+                    <div id="google_translate_element"></div>
                     <div class="row align-items-center">
                         <div class="col-12 col-md-8">
                             <!-- Welcome Area Text Start -->
@@ -102,7 +103,7 @@
                                 <h2>Simplifique seu trabalho</h2>
                                 <p>Usando o nosso aplicativo você pode fazer os cálculos dos seus traçados de caldeiraria sem
                                     precisar sair do lugar, e o melhor não precisa de internet!</p>
-                                <a href="#download" class="btn btn-lg">Baixar</a>
+                                <a href="https://play.google.com/store/apps/details?id=br.com.engcad" target="_blank" class="btn btn-lg" onclick="action.download()">Baixar</a>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
@@ -148,8 +149,8 @@
                         <p>Em apenas 1 minuto você já tem o resultado de qualquer traçado</p>
                         <p>De forma rápida você consegue fazer o cálculo de qualquer traçado em qualquer lugar, sem precisar
                             de internet</p>
-                        <p>Aplicamos as melhores práticas de design para melhorar a usabilidade do aplicativo, fornecendo um ambiente
-                            confortável, simples e intuitivo para os nossos usuários</p>
+                        <p>Aplicamos as melhores práticas de design para melhorar a usabilidade do aplicativo, fornecendo um
+                            ambiente confortável, simples e intuitivo para os nossos usuários</p>
                     </div>
                 </div>
             </div>
@@ -366,7 +367,7 @@
                             <p>Sem restrição de uso</p>
                         </div>
                         <div class="button">
-                            <a class="btn btn-md" href="#" role="button">Começar a usar</a>
+                            <a class="btn btn-md" href="#download" role="button" onclick="action.startUse()">Começar a usar</a>
                         </div>
                     </div>
                 </div>
@@ -474,7 +475,7 @@
                         <div class="panel single-accordion">
                             <h5>
                                 <a role="button" class="collapsed" aria-expanded="true" aria-controls="six" data-toggle="collapse" data-parent="#accordion2"
-                                    href="#six">Como instalar o aplicativo?
+                                    href="#six" onclick="actionFAQ.howToInstall()">Como instalar o aplicativo?
                                     <span class="accor-open">
                                         <i class="icofont icofont-rounded-down"></i>
                                     </span>
@@ -496,7 +497,7 @@
                         <div class="panel single-accordion">
                             <h5>
                                 <a role="button" class="collapsed" aria-expanded="true" aria-controls="seven" data-parent="#accordion2" data-toggle="collapse"
-                                    href="#seven">Como mudar o idioma?
+                                    href="#seven" onclick="actionFAQ.howToChangeLanguage()">Como mudar o idioma?
                                     <span class="accor-open">
                                         <i class="icofont icofont-rounded-down"></i>
                                     </span>
@@ -517,7 +518,7 @@
                         <div class="panel single-accordion">
                             <h5>
                                 <a role="button" aria-expanded="true" aria-controls="eight" class="collapsed" data-parent="#accordion2" data-toggle="collapse"
-                                    href="#eight">Vai ter mais traçados?
+                                    href="#eight" onclick="actionFAQ.moreStrokes()">Vai ter mais traçados?
                                     <span class="accor-open">
                                         <i class="icofont icofont-rounded-down"></i>
                                     </span>
@@ -543,7 +544,7 @@
                     <div class="find_answer_area">
                         <h5>Não tiramos sua dúvida? :(</h5>
                         <p>Você pode falar diretamente com a gente</p>
-                        <a href="#contact">
+                        <a href="#contact" onclick="action.speakByEmail()">
                             <i class="icofont icofont-mail"></i> E-mail</a>
                     </div>
                 </div>
@@ -667,7 +668,7 @@
                     </div>
                     <!-- Download Text Area -->
                     <div class="download_app_text text-center">
-                        <a href="https://play.google.com/store/apps/details?id=br.com.engcad" target="_blank" class="btn btn-lg">
+                        <a href="https://play.google.com/store/apps/details?id=br.com.engcad" target="_blank" class="btn btn-lg" onclick="action.download()">
                             <i class="icofont icofont-brand-android-robot"></i>
                             <span>Download</span>
                         </a>
@@ -729,7 +730,7 @@
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
-                                        <button type="submit" class="btn">ENVIAR</button>
+                                        <button type="submit" class="btn" onclick="action.sendFormContact()">ENVIAR</button>
                                     </div>
                                 </div>
                             </div>
@@ -751,7 +752,7 @@
                     <!-- Footer Social Area Start -->
                     <div class="col-12">
                         <div class="footer_social_area">
-                            <a href="https://www.facebook.com/tracefacil/" target="_blank">
+                            <a href="https://www.facebook.com/tracefacil/" target="_blank" onclick="action.facebook()">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </div>
@@ -790,12 +791,17 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Plugins js -->
     <script src="js/plugins.min.js"></script>
-    <!-- Google Maps js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk" type="text/javascript"></script>
-    <script src="js/map-active.js"></script>
     <!-- Active js -->
     <script src="js/custom.js"></script>
+    <!-- Amplitude js -->
+    <script src="js/amp.js"></script>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'pt' }, 'google_translate_element');
+        }
+    </script>
 </body>
 
 </html>
